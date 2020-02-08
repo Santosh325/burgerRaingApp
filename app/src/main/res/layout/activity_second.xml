@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/holo_green_dark"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".secondActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:fontFamily="monospace"
+            android:textStyle="bold|italic"
+            android:textSize="40sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="McDonald's"
+            android:textColor="#ffcc00"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"/>
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/bur"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+        <androidx.appcompat.widget.AppCompatRatingBar
+
+            android:id="@+id/rate"
+            android:progressTint="@android:color/holo_green_light"
+            android:numStars="5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="340dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:maxLength="30"
+            android:textColorHint="@android:color/darker_gray"
+            android:padding="20sp"
+            android:textAlignment="center"
+            android:hint="Please Give a Feeback"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="470dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="SUBMIT"
+            android:padding="20sp"
+            android:textAlignment="center"
+            android:background="@drawable/round"
+            android:hint="Please Give a Feeback"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="600dp"
+            android:layout_width="180dp"
+            android:layout_height="80dp"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
